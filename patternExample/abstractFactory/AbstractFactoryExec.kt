@@ -16,9 +16,10 @@ class AbstractFactoryExec : PatternMenu() {
     override fun customMessage(): String = "4. Dark/Light mode (Abstract factory pattern)"
 
     override fun process(): String {
-        val isDarkMode = true
+        println("Choose Dark/Light mode \n1. Light \n2. Dark")
+        val option = readln().toInt()
 
-        val factory: UIFactory = if (isDarkMode) DarkUIFactory() else LightUIFactory()
+        val factory: UIFactory = if (option == 2) DarkUIFactory() else LightUIFactory()
         val app = renderUI(factory)
         return app
     }

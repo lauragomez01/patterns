@@ -15,17 +15,20 @@ fun main() {
         Choose one option
         
         CREATIONAL PATTERNS
-        1. Builder (Creational)
-        2. Prototype (Creational)
-        3. Factory Method (Creational)
-        4. Abstract Factory (Creational)
-        5. Singleton (Creational)
+        1. Builder 
+        2. Prototype 
+        3. Factory Method 
+        4. Abstract Factory 
+        5. Singleton 
         
         STRUCTURAL PATTERNS
-        6. Decorator (Structural)
+        6. Decorator 
+        7. Adapter
+        8. Bridge
+        9. Composite
         
         BEHAVIORAL PATTERNS
-        7. Iterator (Behavioral)
+        13. Iterator
         
         0. Exit
         
@@ -35,7 +38,7 @@ fun main() {
     println(menu)
     var choice = readln().toInt()
 
-    while (choice in 1..5) {
+    while (choice in 1..21) {
         val options = mapOf(
             1 to BuilderExec(),
             2 to PrototypeExec(),
@@ -43,7 +46,7 @@ fun main() {
             4 to AbstractFactoryExec(),
             5 to SingletonExec(),
             6 to DecoratorExec(),
-            7 to IteratorExec(),
+            13 to IteratorExec(),
         )
 
         options[choice]?.execute() ?: "Invalid option"

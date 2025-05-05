@@ -10,7 +10,15 @@ import patternExample.template.PatternMenu
  */
 
 class SingletonExec : PatternMenu() {
+    override fun customMessage(): String = "5. Logger (Singleton pattern)"
+
     override fun process(): String {
-        TODO("Not yet implemented")
+        println("Write the log type")
+        val type = readln()
+        println("Write the log content")
+        val content = readln()
+        Logger.log(type, content)
+
+        return ""
     }
 }
