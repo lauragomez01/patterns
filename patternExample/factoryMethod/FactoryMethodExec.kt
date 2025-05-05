@@ -1,5 +1,6 @@
 package patternExample.factoryMethod
 
+import patternExample.factoryMethod.dialogs.Dialog
 import patternExample.factoryMethod.dialogs.MacDialog
 import patternExample.factoryMethod.dialogs.WindowsDialog
 import patternExample.template.PatternMenu
@@ -14,7 +15,7 @@ import patternExample.template.PatternMenu
  */
 
 class FactoryMethodExec : PatternMenu() {
-    override fun customMessage(): String = "5. OS (Factory Method pattern)"
+    override fun customMessage(): String = "3. OS (Factory Method pattern)"
 
     override fun process(): String {
         val osName = System.getProperty("os.name").lowercase()

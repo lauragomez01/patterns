@@ -11,7 +11,7 @@ import patternExample.template.PatternMenu
  */
 
 class DecoratorExec : PatternMenu() {
-    override fun customMessage(): String = "1. Cafe (Decorator pattern)"
+    override fun customMessage(): String = "6. Cafe (Decorator pattern)"
 
     override fun process(): String {
         println("Welcome to the cafe store, choose the additions for your cafe:")

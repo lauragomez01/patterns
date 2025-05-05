@@ -10,7 +10,7 @@ import patternExample.template.PatternMenu
  */
 
 class PrototypeExec : PatternMenu() {
-    override fun customMessage(): String = "4. Copying files (Prototype pattern)"
+    override fun customMessage(): String = "2. Copying files (Prototype pattern)"
 
     override fun process(): String {
         val document = Document("Test file", "This is a test file", "Andrea")

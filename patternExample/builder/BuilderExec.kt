@@ -29,7 +29,7 @@ class BuilderExec : PatternMenu() {
         5 to "Corn",
     )
 
-    override fun customMessage(): String = "2. Pizzeria (Builder pattern)"
+    override fun customMessage(): String = "1. Pizzeria (Builder pattern)"
 
     override fun process(): String {
         println("Welcome to the Pizzeria")

@@ -11,7 +11,7 @@ import patternExample.template.PatternMenu
  */
 
 class IteratorExec : PatternMenu() {
-    override fun customMessage(): String = "3. Names (Iterator pattern)"
+    override fun customMessage(): String = "7. Names (Iterator pattern)"
 
     override fun process(): String {
         println("Choose the quantity of names to iterate: ")
