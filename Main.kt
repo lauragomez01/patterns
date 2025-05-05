@@ -1,5 +1,6 @@
 import patternExample.builder.BuilderExec
 import patternExample.decorator.DecoratorExec
+import patternExample.factoryMethod.FactoryMethodExec
 import patternExample.iterator.IteratorExec
 import patternExample.prototype.PrototypeExec
 
@@ -15,6 +16,7 @@ fun main() {
         2. Builder
         3. Iterator
         4. Prototype
+        5. Factory Method
         0. Exit
         
         Your option to
@@ -23,12 +25,13 @@ fun main() {
     println(menu)
     var choice = readln().toInt()
 
-    while (choice in 1..4) {
+    while (choice in 1..5) {
         val options = mapOf(
             1 to DecoratorExec(),
             2 to BuilderExec(),
             3 to IteratorExec(),
             4 to PrototypeExec(),
+            5 to FactoryMethodExec(),
         )
 
         options[choice]?.execute() ?: "Invalid option"
