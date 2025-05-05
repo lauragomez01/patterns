@@ -2,6 +2,7 @@ import patternExample.abstractFactory.AbstractFactoryExec
 import patternExample.adapter.AdapterExec
 import patternExample.bridge.BridgeExec
 import patternExample.builder.BuilderExec
+import patternExample.composite.CompositeExec
 import patternExample.decorator.DecoratorExec
 import patternExample.factoryMethod.FactoryMethodExec
 import patternExample.iterator.IteratorExec
@@ -50,6 +51,7 @@ fun main() {
             6 to DecoratorExec(),
             7 to AdapterExec(),
             8 to BridgeExec(),
+            9 to CompositeExec(),
             13 to IteratorExec(),
         )
 
