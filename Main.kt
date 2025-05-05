@@ -1,4 +1,5 @@
 import patternExample.abstractFactory.AbstractFactoryExec
+import patternExample.adapter.AdapterExec
 import patternExample.builder.BuilderExec
 import patternExample.decorator.DecoratorExec
 import patternExample.factoryMethod.FactoryMethodExec
@@ -46,6 +47,7 @@ fun main() {
             4 to AbstractFactoryExec(),
             5 to SingletonExec(),
             6 to DecoratorExec(),
+            7 to AdapterExec(),
             13 to IteratorExec(),
         )
 
