@@ -9,6 +9,7 @@ import patternExample.factoryMethod.FactoryMethodExec
 import patternExample.flyweight.FlyweightExec
 import patternExample.iterator.IteratorExec
 import patternExample.prototype.PrototypeExec
+import patternExample.proxy.ProxyExec
 import patternExample.singleton.SingletonExec
 
 fun main() {
@@ -59,6 +60,7 @@ fun main() {
             9 to CompositeExec(),
             10 to FacadeExec(),
             11 to FlyweightExec(),
+            12 to ProxyExec(),
             13 to IteratorExec(),
         )
 

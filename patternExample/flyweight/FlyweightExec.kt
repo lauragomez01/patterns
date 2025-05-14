@@ -13,7 +13,7 @@ import patternExample.template.PatternMenu
  */
 
 class FlyweightExec : PatternMenu() {
-    override fun customMessage(): String = "11. Names (Flyweight pattern)"
+    override fun customMessage(): String = "11. Text editor (Flyweight pattern)"
 
     override fun process(): String {
         val a1 = getGlyph('a')
