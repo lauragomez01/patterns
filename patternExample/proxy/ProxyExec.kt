@@ -14,7 +14,7 @@ import patternExample.template.PatternMenu
  */
 
 class ProxyExec : PatternMenu() {
-    override fun customMessage(): String = "12. Names (Proxy pattern)"
+    override fun customMessage(): String = "12. Query the real client (Proxy pattern)"
 
     override fun process(): String {
         val subject: RealClient = Proxy()
