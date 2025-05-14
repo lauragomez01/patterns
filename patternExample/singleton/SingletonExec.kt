@@ -19,6 +19,9 @@ class SingletonExec : PatternMenu() {
         val content = readln()
         Logger.log(type, content)
 
-        return ""
+        val s1 = MySingleton.getInstance()
+        val s2 = MySingleton.getInstance()
+
+        return "Is the same instance ${s1 === s2}"
     }
 }

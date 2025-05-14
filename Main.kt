@@ -4,6 +4,7 @@ import patternExample.bridge.BridgeExec
 import patternExample.builder.BuilderExec
 import patternExample.composite.CompositeExec
 import patternExample.decorator.DecoratorExec
+import patternExample.facade.FacadeExec
 import patternExample.factoryMethod.FactoryMethodExec
 import patternExample.iterator.IteratorExec
 import patternExample.prototype.PrototypeExec
@@ -29,6 +30,7 @@ fun main() {
         7. Adapter
         8. Bridge
         9. Composite
+        10. Facade
         
         BEHAVIORAL PATTERNS
         13. Iterator
@@ -52,6 +54,7 @@ fun main() {
             7 to AdapterExec(),
             8 to BridgeExec(),
             9 to CompositeExec(),
+            10 to FacadeExec(),
             13 to IteratorExec(),
         )
 
